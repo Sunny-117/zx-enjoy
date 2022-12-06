@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 // 1. 获取repo列表
 // esm
-const data = await fetch('https://api.github.com/users/boyfeiyu/repos')
+const data = await fetch('https://api.github.com/users/sunny-117/repos')
 const urls = await data.json()
 const repos = urls.filter(info => !info.fork).map(info => info.git_url)
 console.log(repos)
